@@ -258,6 +258,22 @@ MainWindow::MainWindow(QWidget *parent)
     QObject::connect(configwidget->v_DivB_Goal_Width.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
     QObject::connect(configwidget->v_DivB_Goal_Height.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
 
+    QObject::connect(configwidget->v_DivC_Field_Line_Width.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
+    QObject::connect(configwidget->v_DivC_Field_Length.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
+    QObject::connect(configwidget->v_DivC_Field_Width.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
+    QObject::connect(configwidget->v_DivC_Field_Rad.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
+    QObject::connect(configwidget->v_DivC_Field_Free_Kick.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
+    QObject::connect(configwidget->v_DivC_Field_Penalty_Width.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
+    QObject::connect(configwidget->v_DivC_Field_Penalty_Depth.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
+    QObject::connect(configwidget->v_DivC_Field_Penalty_Point.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
+    QObject::connect(configwidget->v_DivC_Field_Margin.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
+    QObject::connect(configwidget->v_DivC_Field_Referee_Margin.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
+    QObject::connect(configwidget->v_DivC_Wall_Thickness.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
+    QObject::connect(configwidget->v_DivC_Goal_Thickness.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
+    QObject::connect(configwidget->v_DivC_Goal_Depth.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
+    QObject::connect(configwidget->v_DivC_Goal_Width.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
+    QObject::connect(configwidget->v_DivC_Goal_Height.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
+
     QObject::connect(configwidget->v_YellowTeam.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
     QObject::connect(configwidget->v_BlueTeam.get(), SIGNAL(wasEdited(VarPtr)), this, SLOT(restartSimulator()));
 
